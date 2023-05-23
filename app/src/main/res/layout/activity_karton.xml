@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KartonActivity"
+    android:background="@color/colorPrimary">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_karton"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:backgroundTint="@color/kartoncolor"
+        app:cardCornerRadius="20dp"
+        android:layout_centerHorizontal="true"
+        >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Картон"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="43sp"
+            android:layout_marginLeft="50dp"
+            ></TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/karton"
+        ></ImageView>
+
+</LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerKarton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/exit_karton"
+        ></androidx.recyclerview.widget.RecyclerView>
+    <Button
+        android:id="@+id/exit_karton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Выйти"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/main_karton"
+        android:backgroundTint="@color/kartoncolor"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat_black"
+        android:padding="15dp"
+></Button>
+
+</RelativeLayout>

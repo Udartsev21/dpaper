@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactActivity"
+    android:background="@color/white">
+
+<LinearLayout
+    android:id="@+id/main_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+ >
+
+
+ <Button
+     android:id="@+id/exit_contact"
+     android:layout_width="50dp"
+     android:layout_height="50dp"
+     android:background="@drawable/exit"
+android:layout_marginLeft="10dp"
+     android:layout_marginTop="10dp"
+     android:padding="30dp"/>
+
+ <TextView
+
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Контакты"
+     android:fontFamily="@font/montserrat_black"
+     android:textStyle="bold"
+     android:textSize="44sp"
+     android:textColor="@color/black"
+android:layout_marginLeft="40dp"
+
+
+     ></TextView>
+
+
+
+</LinearLayout>
+
+ <TextView
+     android:id="@+id/name1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+android:layout_below="@+id/main_title"
+  android:text="Телефон службы поддержки:"
+     android:layout_marginTop="20dp"
+     android:textColor="@color/black"
+    android:textSize="24sp"
+     android:layout_marginLeft="10dp"
+     android:fontFamily="@font/montserrat_bold"
+     android:textStyle="bold"
+  ></TextView>
+ <TextView
+     android:id="@+id/descp1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+  android:layout_below="@+id/name1"
+     android:text="8 (800) 100-50-64 — для звонков"
+     android:layout_marginTop="20dp"
+     android:textSize="20sp"
+     android:textStyle="bold"
+     android:textColor="@color/black"
+  android:layout_marginLeft="10dp"
+     android:fontFamily="@font/montserrat_regular"
+  ></TextView>
+ <TextView
+  android:id="@+id/descp2"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+  android:layout_below="@+id/descp1"
+  android:textStyle="bold"
+  android:textSize="20sp"
+  android:layout_marginTop="20dp"
+     android:fontFamily="@font/montserrat_regular"
+android:layout_marginLeft="10dp"
+     android:textColor="@color/black"
+  android:text="+7 (903) 911-99-66 — для WhatsApp, Viber, Telegram сообщений"
+  ></TextView>
+ <TextView
+  android:id="@+id/name2"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/descp2"
+     android:text="Адрес для электронных писем:"
+     android:textStyle="bold"
+     android:textSize="24sp"
+android:layout_marginTop="20dp"
+     android:textColor="@color/black"
+     android:fontFamily="@font/montserrat_bold"
+     android:layout_marginLeft="10dp"
+ ></TextView>
+ <TextView
+  android:id="@+id/descp3"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+  android:text="hello@dpaper.ru"
+  android:layout_below="@id/name2"
+  android:textSize="20sp"
+     android:fontFamily="@font/montserrat_regular"
+     android:layout_marginLeft="10dp"
+     android:textStyle="bold"
+android:layout_marginTop="20dp"
+     android:textColor="@color/black"
+  ></TextView>
+
+  <LinearLayout
+      android:id="@+id/grafic"
+      android:layout_marginLeft="10dp"
+      android:layout_below="@id/descp3"
+      android:layout_marginTop="20dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+   android:orientation="vertical">
+
+   <TextView
+       android:id="@+id/name3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+android:text="График работы:"
+       android:fontFamily="@font/montserrat_bold"
+       android:textSize="24sp"
+       android:textColor="@color/black"
+       android:textStyle="bold"
+    ></TextView>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+    android:text="Пн–Чт — с 9:00 до 18:00;"
+    android:textStyle="bold"
+    android:fontFamily="@font/montserrat_regular"
+    android:textSize="20sp"
+    android:layout_marginTop="10dp"
+       android:textColor="@color/black"
+    ></TextView>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Пт — с 9:00 до 17:00;"
+       android:textStyle="bold"
+       android:fontFamily="@font/montserrat_regular"
+       android:textSize="20sp"
+       android:layout_marginTop="10dp"
+       android:textColor="@color/black"
+       ></TextView>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Сб и Вс — выходные дни."
+       android:textStyle="bold"
+       android:fontFamily="@font/montserrat_regular"
+       android:textSize="20sp"
+       android:layout_marginTop="10dp"
+       android:textColor="@color/black"
+       ></TextView>
+  </LinearLayout>
+
+ <TextView
+  android:id="@+id/name4"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+  android:layout_below="@+id/grafic"
+  android:layout_marginTop="20dp"
+  android:text="Юридический адрес:"
+     android:fontFamily="@font/montserrat_bold"
+     android:textSize="24sp"
+     android:textColor="@color/black"
+     android:textStyle="bold"
+  android:layout_marginLeft="10dp"
+></TextView>
+ <TextView
+  android:id="@+id/descp4"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+  android:layout_below="@id/name4"
+  android:text="ООО «ДИАЛОГСИБИРЬ», Россия, 656049, город Барнаул, улица Анатолия, дом 35а."
+     android:textStyle="bold"
+     android:fontFamily="@font/montserrat_regular"
+     android:textSize="20sp"
+     android:layout_marginTop="20dp"
+     android:layout_marginLeft="10dp"
+     android:textColor="@color/black"
+
+  ></TextView>
+
+
+</RelativeLayout>

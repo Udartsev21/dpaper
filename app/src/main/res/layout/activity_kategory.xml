@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KategoryActivity"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/kategoryTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Выберите категорию"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"></TextView>
+
+    <Button
+        android:id="@+id/desing_paper"
+        android:layout_width="230dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/kategoryTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/button1"
+        android:text="Дизайнерскаская бумага"
+        android:textColor="@color/white"
+        android:textAllCaps="false">
+
+    </Button>
+
+    <Button
+        android:id="@+id/Tishyu"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/desing_paper"
+        android:layout_centerHorizontal="true"
+        android:text="Тишью"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button1"
+        android:textColor="@color/white"
+        ></Button>
+
+    <Button
+        android:id="@+id/Karton"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Tishyu"
+        android:layout_centerHorizontal="true"
+        android:text="Картон"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button1"
+        android:textColor="@color/white"
+        ></Button>
+
+    <Button
+        android:id="@+id/Kalka"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Karton"
+        android:layout_centerHorizontal="true"
+        android:text="Калька"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button1"
+        android:textColor="@color/white"
+        ></Button>
+
+</RelativeLayout>

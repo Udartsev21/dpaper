@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nav_adv.FeedbackActivity"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Мы"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="54sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_black">
+    </TextView>
+    <TextView
+        android:id="@+id/not"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="не"
+        android:layout_below="@+id/me"
+        android:textColor="@color/black"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_black">
+    </TextView>
+    <TextView
+        android:id="@+id/hide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="скрываемся"
+        android:layout_below="@+id/not"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="45sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/montserrat_black">
+    </TextView>
+
+    <TextView
+        android:id="@+id/feedback_descp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Вот так выглядим мы, теперь осталось познакомиться с вами"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/black"
+android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/hide"
+        android:textStyle="bold"
+        ></TextView>
+
+    <LinearLayout
+        android:id="@+id/flamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feedback_descp"
+        android:layout_marginTop="20dp"
+        >
+
+    <ImageView
+        android:id="@+id/open_flamp"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:background="@drawable/flamp"
+
+        ></ImageView>
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_marginTop="85dp"
+            android:text="Поделитесь своим отзывом на Flamp"
+            android:textColor="@color/black"
+            android:textSize="19sp"></TextView>
+
+
+    </LinearLayout>
+<Button
+    android:id="@+id/exit_feedback"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/flamp"
+    android:layout_marginTop="40dp"
+    android:backgroundTint="@color/colorCollections"
+    android:text="Выйти"
+    android:fontFamily="@font/montserrat_black"
+    android:textColor="@color/black"
+    android:layout_centerHorizontal="true"
+    android:padding="15dp"
+    ></Button>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/person1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="90dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="@color/colorCollections"
+        android:layout_alignParentEnd="true"
+
+        >
+        <ImageView
+            android:background="@drawable/person1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            ></ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/person2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="90dp"
+        android:backgroundTint="@color/colorCollections"
+        android:layout_below="@+id/person1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/person2"></ImageView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/person3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="90dp"
+        android:backgroundTint="@color/colorCollections"
+        android:layout_below="@+id/person4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:background="@drawable/person3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            ></ImageView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/person4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="90dp"
+        android:backgroundTint="@color/colorCollections"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageView
+            android:background="@drawable/person4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            ></ImageView>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

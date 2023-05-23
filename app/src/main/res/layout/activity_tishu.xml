@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KartonActivity"
+    android:background="@color/colorPrimary">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_tishu"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:backgroundTint="@color/tishucolor"
+        app:cardCornerRadius="20dp"
+        android:layout_centerHorizontal="true"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Калька"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="43sp"
+                android:layout_marginLeft="45dp"
+                ></TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tishy"
+                ></ImageView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerTishu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/exit_tishu"
+        ></androidx.recyclerview.widget.RecyclerView>
+    <Button
+        android:id="@+id/exit_tishu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Выйти"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/main_tishu"
+        android:backgroundTint="@color/tishucolor"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_black"
+        android:padding="15dp"
+        ></Button>
+
+</RelativeLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".nav_adv.SaleActivity">
+
+
+        <TextView
+            android:id="@+id/great"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="44sp"
+            android:text="Great"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_black"
+            android:layout_marginLeft="40dp"
+            />
+
+        <TextView
+            android:id="@+id/some_inf"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorPrimary"
+            android:text="*Во время старта приложения (10.05.2023), действует скидка следующих позиций:
+            *только для заказов через мобильное приложение"></TextView>
+
+
+    <TextView
+        android:id="@+id/sale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sale"
+        android:layout_below="@id/great"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/red"
+        android:layout_marginLeft="40dp"
+
+        ></TextView>
+
+    <ImageView
+        android:id="@+id/colorplan"
+        android:layout_width="200dp"
+        android:layout_marginTop="40dp"
+        android:layout_height="150dp"
+        android:background="@drawable/colorplan"
+        android:layout_below="@+id/sale"
+></ImageView>
+
+    <ImageView
+        android:id="@+id/burano"
+        android:layout_width="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="150dp"
+        android:background="@drawable/burano"
+        android:layout_below="@+id/colorplan"
+        ></ImageView>
+
+    <ImageView
+        android:id="@+id/danial"
+        android:layout_width="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="150dp"
+        android:background="@drawable/danial"
+        android:layout_below="@+id/burano"
+
+        ></ImageView>
+
+    <Button
+        android:id="@+id/exit_sale_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/danial"
+        android:layout_marginTop="100dp"
+        android:padding="10dp"
+        android:text="Вернуться"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+
+        android:textStyle="bold"></Button>
+
+    <TextView
+        android:id="@+id/fiveteen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/some_inf"
+        android:text="-15 %"
+        android:textSize="44sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="70dp"
+></TextView>
+    <TextView
+        android:id="@+id/ten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fiveteen"
+        android:text="-10 %"
+        android:textSize="44sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="110dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ten"
+        android:text="-6 %"
+        android:textSize="44sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="110dp"
+        ></TextView>
+
+    <ImageView
+        android:id="@+id/fire15"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/fite"
+        android:layout_below="@id/some_inf"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="80dp"
+        ></ImageView>
+    <ImageView
+        android:id="@+id/fire10"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/fite"
+        android:layout_below="@id/fire15"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="130dp"
+        ></ImageView>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/fite"
+        android:layout_below="@id/fire10"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="127dp"
+        ></ImageView>
+
+</RelativeLayout>

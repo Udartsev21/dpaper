@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PreviewActivity"
+   >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/preview3"
+        android:background="@drawable/grad_preview2"
+
+     />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:layout_marginBottom="20dp"
+
+        >
+        <Button
+            android:id="@+id/next2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Далее"
+            android:padding="15dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="75dp"
+            android:textColor="@color/white"
+
+
+            ></Button>
+
+        <ImageButton
+            android:id="@+id/skipBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/skip"
+            android:padding="15dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerInside"
+
+            android:src="@drawable/skip_btn" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

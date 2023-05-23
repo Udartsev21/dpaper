@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/a_logo"
+        android:layout_width="286dp"
+        android:layout_height="249dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo"
+
+        ></ImageView>
+
+
+    <EditText
+        android:id="@+id/input_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/a_logo"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/authorization"
+        android:padding="20dp"
+        android:hint="Номер телефона"
+        android:inputType="number"
+        android:textColorHint="@color/HintAuthorizationBtn"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        ></EditText>
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_login"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/authorization"
+        android:padding="20dp"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:textColorHint="@color/HintAuthorizationBtn"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        ></EditText>
+
+
+    <TextView
+        android:id="@+id/forget_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Забыли пароль?"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/main_login"
+        android:layout_centerHorizontal="true"
+
+        ></TextView>
+
+    <TextView
+        android:id="@+id/admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="For staff only"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/input_password"
+android:layout_marginRight="15dp"
+       android:layout_alignParentEnd="true"
+
+        android:textStyle="bold"
+
+        ></TextView>
+
+    <TextView
+        android:id="@+id/client"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="For client"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/input_password"
+        android:layout_marginRight="30dp"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"
+
+        ></TextView>
+
+   <LinearLayout
+       android:id="@+id/linear_checkbox"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_below="@id/input_password">
+
+<com.google.android.material.checkbox.MaterialCheckBox
+    android:id="@+id/checkbox"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+    android:text="Запомнить меня"
+    android:textColor="@color/white"
+    android:textSize="18sp"
+    android:elevation="6dp"
+
+    android:stateListAnimator="@null"
+    android:translationZ="4dp"
+android:gravity="center_vertical"
+     android:layout_marginLeft="40dp">
+
+</com.google.android.material.checkbox.MaterialCheckBox>
+
+
+   </LinearLayout>
+
+
+    <Button
+        android:id="@+id/main_login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/button"
+        android:text="Войти"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:padding="15dp"
+        android:textColor="@color/white"
+
+
+        />
+</RelativeLayout>

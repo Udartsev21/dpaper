@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    app:cardElevation="20dp"
+    app:cardCornerRadius="50dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/Rlay_tishu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tishucolor">
+
+
+        <ImageView
+            android:id="@+id/product_image_tishu"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+
+            />
+
+
+        <TextView
+            android:id="@+id/product_name_tishu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_image_tishu"
+            android:text="Product name"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/product_description_tishu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_name_tishu"
+            android:layout_marginBottom="20dp"
+            android:text="Product description "
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+
+            android:id="@+id/product_price_tishu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_description_tishu"
+            android:padding="5dp"
+            android:text="Product price"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:layout_marginLeft="35dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addToFavorite_tishu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/product_description_tishu"
+            android:layout_marginStart="310dp"
+            android:background="@drawable/heart"
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

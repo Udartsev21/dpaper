@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavoriteActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/pixel_heart"
+        android:layout_marginLeft="20dp"
+        >
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/favorite"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Favorite"
+    android:fontFamily="@font/montserrat_black"
+    android:textSize="54sp"
+    android:textColor="@color/darkRed"
+      android:layout_alignParentEnd="true"
+        android:layout_marginRight="25dp"
+
+
+    ></TextView>
+
+    <TextView
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/favorite"
+        android:layout_alignLeft="@+id/favorite"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/montserrat_black"
+        android:text="LIST"
+        android:textColor="@color/black"
+        android:textSize="54sp"></TextView>
+<ImageView
+    android:id="@+id/list_iv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list"
+    android:layout_below="@+id/list"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+
+>
+</ImageView>
+    <ListView
+        android:id="@+id/order_list"
+        android:layout_width="320dp"
+        android:layout_height="530dp"
+        android:layout_marginTop="30dp"
+        android:text="Упс... Пока здесь ничего нет."
+        android:layout_below="@+id/list"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/HintAuthorizationBtn"
+        android:textStyle="bold"
+        ></ListView>
+    <Button
+        android:id="@+id/exit_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_iv"
+        android:layout_centerHorizontal="true"
+        android:text="Выйти"
+        android:backgroundTint="@color/colorCollections"
+        android:textAllCaps="false"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat_black"
+        android:padding="15dp"
+        ></Button>
+
+</RelativeLayout>

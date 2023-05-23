@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "996219133560",
+    "project_id": "dpaper-shop",
+    "storage_bucket": "dpaper-shop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996219133560:android:37ccb45a9b5848a1e7578d",
+        "android_client_info": {
+          "package_name": "com.example.dpaper_shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996219133560-aoaaamrjjmiot8s4t7bat9t4v1idbqpb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dpaper_shop",
+            "certificate_hash": "c7a44b4d035f3cf368e81c3c67b8e97f6518155c"
+          }
+        },
+        {
+          "client_id": "996219133560-oj2a2fp8bmr14ik0l3j3sk4eetod40e9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWVg_2B8d8WTwDCW7xMz2Gn9EtIV4U6Fs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996219133560-oj2a2fp8bmr14ik0l3j3sk4eetod40e9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
